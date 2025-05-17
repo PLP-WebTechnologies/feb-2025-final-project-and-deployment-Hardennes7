@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KITO Bags</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>KITO Bags</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="account.html">Account</a>
+        <a href="ask%20KITO.html">Ask KITO</a>
+        <a href="categories.html">Categories</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bag-category">
+      <h2>Men's Bags</h2>
+      <div class="bag-list">
+        <div class="bag-card">
+          <img src="men.jpg" alt="Men's Bag" />
+          <p>Classic Leather Bag</p>
+          <p class="price">Ksh 3,500</p>
+          <button onclick="addToCart('Classic Leather Bag', 3500)">Add to Cart</button>
+          <button onclick="toggleView(this)">View 3D</button>
+        </div>  
+
+        
+      <section class="bag-category">
+      <h2>Ladies' Bags</h2>
+      <div class="bag-list">
+        <div class="bag-card">
+          <img src="lady.jpg" alt="Men's Bag" />
+          <p>Classic Leather Bag</p>
+          <p class="price">Ksh 5,500</p>
+          <button onclick="addToCart('Classic Leather Bag', 3500)">Add to Cart</button>
+          <button onclick="toggleView(this)">View 3D</button>
+        </div>
+
+
+      <section class="bag-category">
+      <h2>Comrade Choice</h2>
+      <div class="bag-list">
+        <div class="bag-card">
+          <img src="comradechoice.jpg" alt="Men's Bag" />
+          <p>Classic Leather Bag</p>
+          <p class="price">Ksh 1000</p>
+          <button onclick="addToCart('Classic Leather Bag', 3500)">Add to Cart</button>
+          <button onclick="toggleView(this)">View 3D</button>
+        </div>
+
+     <section class="bag-category">
+      <h2>Teens Bags</h2>
+      <div class="bag-list">
+        <div class="bag-card">
+          <img src="teen.jpg" alt="Men's Bag" />
+          <p>Classic Leather Bag</p>
+          <p class="price">Ksh 1,500</p>
+          <button onclick="addToCart('Classic Leather Bag', 3500)">Add to Cart</button>
+          <button onclick="toggleView(this)">View 3D</button>
+        </div>
+
+        
+      
+    </section>
+    <!-- Repeat sections for other categories -->
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <marquee behavior="scroll" direction="left">
+        Contact us: 
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/tiktok-icon.png" alt="TikTok" /></a>
+        <a href="#"><img src="images/email-icon.png" alt="Email" /></a>
+        <a href="#"><img src="images/x-icon.png" alt="X" /></a>
+        <a href="#"><img src="images/whatsapp-icon.png" alt="WhatsApp" /></a>
+      </marquee>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

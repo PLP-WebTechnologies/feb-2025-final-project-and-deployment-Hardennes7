@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ask KITO</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Ask KITO</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="account.html">Account</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Ask anything about KITO Bags</h2>
+    <input type="text" id="user-question" placeholder="Type your question here...">
+    <button onclick="askKito()">Ask</button>
+    <p id="kito-response"></p>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <marquee behavior="scroll" direction="left">
+        Contact us:
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+        <a href="#"><img src="images/x-icon.png" alt="X"></a>
+        <a href="#"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+      </marquee>
+    </div>
+  </footer>
+
+  <script>
+    function askKito() {
+      const question = document.getElementById('user-question').value;
+      const response = document.getElementById('kito-response');
+      if (question.toLowerCase().includes('price')) {
+        response.innerText = 'Most KITO bags range from Ksh 1,500 to Ksh 4,000.';
+      } else if (question.toLowerCase().includes('delivery')) {
+        response.innerText = 'We offer free delivery within Kenya in 2-3 days!';
+      } else {
+        response.innerText = 'Thank you for your question. KITO will get back to you soon!';
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KITO Bags - Categories</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>KITO Bags - Category</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="account.html">Account</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Selected Category: Men</h2>
+    <div class="bag-list">
+      <div class="bag-card">
+        <img src="images/men-bag.jpg" alt="Men's Bag">
+        <p>Classic Men Bag</p>
+        <p class="price">Ksh 3,000</p>
+        <button onclick="addToCart('Classic Men Bag', 3000)">Add to Cart</button>
+        <button onclick="toggleView(this)">View 3D</button>
+      </div>
+      <!-- Add more bags based on category -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <marquee behavior="scroll" direction="left">
+        Contact us:
+        <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a>
+        <a href="#"><img src="images/email-icon.png" alt="Email"></a>
+        <a href="#"><img src="images/x-icon.png" alt="X"></a>
+        <a href="#"><img src="images/whatsapp-icon.png" alt="WhatsApp"></a>
+      </marquee>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
